@@ -17,9 +17,9 @@ public class ReverseLinkedListAttempt2Demo {
 			return head;
 		}
 
-		ListNode2 newHead = reverseList(head.next);
+		ListNode2 newHead = reverseList(head.next);  // ← frame заморожується тут
 
-		head.next.next = head;
+		head.next.next = head; // ← продовжується тільки після повернення
 		//4.next -> 3
 		//3.next -> 2
 		//відсутнійсть викликає StackOverflowError на toString коли System.out.printl 2⇄1
